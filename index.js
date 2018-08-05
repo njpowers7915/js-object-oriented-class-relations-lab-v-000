@@ -26,5 +26,12 @@ class Passenger {
 
 let tripId = 0
 class Trip {
-
+  constructor(driver, passenger) {
+    if(driver) {
+      this.driverId = driver.id
+    }
+    if(passenger) {
+      this.driverId = driver.id
+    }
+  }
 }
