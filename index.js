@@ -64,7 +64,7 @@ class Trip {
   setDriver(driver) {
     this.driverId = driver.id
   }
-  
+
   setPassenger(passenger) {
     this.passengerId = passenger.id
   }
@@ -76,8 +76,8 @@ class Trip {
   }
 
   passenger(){
-    return store.drivers.find(function(driver){
-      return driver.id === this.driverId
+    return store.passengers.find(function(passenger){
+      return passenger.id === this.passengerId
     })
   }
 }
