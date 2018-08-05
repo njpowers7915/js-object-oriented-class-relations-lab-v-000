@@ -40,6 +40,12 @@ class Passenger {
       return trip.passengerId === this.id
     })
   }
+
+  drivers(){
+    return store.trips.filter(trip => {
+      return trip.passengerId === this.id
+    })
+  }
 }
 
 let tripId = 0
