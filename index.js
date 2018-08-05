@@ -48,9 +48,6 @@ class Trip {
     this.id = ++tripId
     this.driverId = driver.id
     this.passengerId = passenger.id
-    this.driver.passengers.push(store.drivers.find(driver => {
-      return driver.id === this.driverId
-    }))
     store.trips.push(this)
   }
 
