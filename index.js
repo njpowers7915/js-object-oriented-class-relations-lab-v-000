@@ -8,6 +8,12 @@ class Driver {
     store.drivers.push(this)
   }
 
+  trips(){
+    return store.trips.filter(trip => {
+      return trip.driverId === this.id
+    })
+  }
+  
   passengers(){
     let driverTrips = this.trips()
     let driverPassengers = []
@@ -17,11 +23,7 @@ class Driver {
     return driverPassengers;
   }
 
-  trips(){
-    return store.trips.filter(trip => {
-      return trip.driverId === this.id
-    })
-  }
+  
 }
 
 let passengerId = 0
