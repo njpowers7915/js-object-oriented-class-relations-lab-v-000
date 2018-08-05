@@ -57,12 +57,12 @@ class Trip {
 
   setDriver(driver, passenger) {
     this.driverId = driver.id
-    this.driver.passenger = passenger
+    this.driver.passengers.push(passenger)
   }
 
   setPassenger(driver, passenger) {
     this.passengerId = passenger.id
-    this.passenger.driver = driver
+    this.passenger.drivers.push(driver)
   }
 
   driver(){
