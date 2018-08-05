@@ -8,7 +8,7 @@ class Driver {
     store.drivers.push(this)
   }
 
-  passengers(){
+  passenger(){
     return store.passengers.filter(passenger => {
       return passenger.driverId === this.id
     })
