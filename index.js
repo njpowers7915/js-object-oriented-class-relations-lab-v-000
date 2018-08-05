@@ -12,9 +12,6 @@ class Driver {
     let driverPassengers = store.trips.filter(trip => {
       return trip.driverId === this.id
     })
-    return driverPassengers.filter(passenger => {
-      return trip.passengerId ===
-    })
   }
 
   trips(){
