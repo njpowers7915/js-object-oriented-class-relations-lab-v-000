@@ -68,7 +68,7 @@ class Trip {
   }
 
   driver(){
-    return store.users.find(function(user){
+    return store.driver.find(function(user){
       return user.id === this.userId
     })
 }
