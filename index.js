@@ -42,7 +42,7 @@ class Passenger {
   }
 
   drivers(){
-    return store.drivers.filter(function(driver) {
+    return store.drivers.filter(driver => {
       return driver.passengerId === this.id
     })
   }
