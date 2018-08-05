@@ -57,7 +57,9 @@ class Trip {
 
   setDriver(driver, passenger) {
     this.driverId = driver.id
-    this.driver.passengers.push(passenger)
+    this.driver.passengers.push(store.drivers.find(driver => {
+      return driver.id === this.driverId
+    })
   }
 
   setPassenger(driver, passenger) {
