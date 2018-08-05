@@ -28,9 +28,6 @@ class Passenger {
     this.name = name
     store.passengers.push(this)
   }
-  setDriver(driver) {
-    this.driverId = driver.id
-  }
 
   trips(){
     return store.trips.filter(trip => {
