@@ -60,7 +60,7 @@ class Trip {
     this.driver.
   }
 
-  setPassenger(passenger) {
+  setPassenger(driver, passenger) {
     this.passengerId = passenger.id
   }
 
