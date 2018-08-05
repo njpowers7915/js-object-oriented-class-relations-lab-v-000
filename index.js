@@ -9,9 +9,10 @@ class Driver {
   }
 
   passengers(){
-    let driverTrips = store.trips.filter(trip => {
+    let driverTrips = []
+    driverTrips.push(store.trips.filter(trip => {
       return trip.driverId === this.id
-    })
+    }))
     driverTrips.forEach(function(trip) {
       return store.passengers.find(passenger => {
         return passenger.id === trip.passengerId
