@@ -43,7 +43,7 @@ class Passenger {
     let passengerTrips = this.trips()
     let passengerDrivers = []
     passengerTrips.forEach(function(trip) {
-      passengerDrivers.push(trip.passenger);
+      passengerDrivers.push(trip.passenger());
     })
     return passengerDrivers;
   }
