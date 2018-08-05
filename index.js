@@ -69,6 +69,6 @@ class Trip {
 
   driver(){
     return store.drivers.find(function(driver){
-      return user.id === this.userId
+      return driver.id === this.driverId
     })
 }
