@@ -10,9 +10,11 @@ class Driver {
 
   passengers(){
     let driverTrips = this.trips()
+    let driverPassengers = []
     driverTrips.forEach(function(trip) {
-      return trip.passenger;
+      driverPassengers.push(trip.passenger);
     })
+    return driverPassengers;
   }
 
   trips(){
